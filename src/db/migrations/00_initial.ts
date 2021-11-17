@@ -38,6 +38,11 @@ export const up = async (queryInterface: QueryInterface): Promise<void> => {
     updatedAt: {
       type: DATE,
       allowNull: false
+    },
+    isPinned: {
+      type: INTEGER,
+      allowNull: true,
+      defaultValue: 0
     }
   });
 };
